@@ -1,0 +1,12 @@
+version: '1'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: a121314A
+      MYSQL_DATABASE: account
